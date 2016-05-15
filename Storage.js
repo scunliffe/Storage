@@ -1,7 +1,8 @@
 /*
-	Provide a wrapper to localStorage to store data with the following enhancements:
-		* Stored values can be any datatype, not just strings
-		* A local cache is maintained in memory to avoid de-serializing non-dirty values
+  Provide a wrapper to localStorage to store data with the following enhancements:
+    * All values stored are in a specified namespace
+    * Stored values can be any datatype, not just strings
+    * A local cache is maintained in memory to avoid de-serializing non-dirty values
 */
 'use strict';
 var Storage = Storage || {};
