@@ -18,6 +18,7 @@ var Storage = Storage || {};
 				localStorage.removeItem(key);
 			}
 		}
+		this.flushCache();
 	};
 	Storage.flushCache = function(){
 		this._cache = {};
