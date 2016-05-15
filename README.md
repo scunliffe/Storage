@@ -8,38 +8,35 @@ A tiny wrapper for the JavaScript localStorage API for storing non-string values
 
 #What methods does it support?
 
-    void Storage.clear()
-    /*
-      Deletes all values for the current namespace from localStorage
-    */
+```js
+void Storage.clear()
+/*
+  Deletes all values for the current namespace from localStorage
+*/
 
-    void Storage.flushCache()
-    /*
-      Clears the in-memory cache for the current namespace
-    */
+void Storage.flushCache()
+/*
+  Clears the in-memory cache for the current namespace
+*/
 
-    variant Storage.getItem(key)
-    /*
-      Returns the value stored for this key or null if not defined
-      Value is retrieved from the cache (if present)
-    */
+variant Storage.getItem(key)
+/*
+  Returns the value stored for this key or null if not defined
+  Value is retrieved from the cache (if present)
+*/
 		
-    void Storage.removeItem(key)
-    /*
-      Deletes the key for the current namespace from localStorage
-    */
+void Storage.removeItem(key)
+/*
+  Deletes the key for the current namespace from localStorage
+*/
 		
-    void Storage.setItem(key, value)
-    /*
-      Sets the key to the value specified for the current namespace in localStorage
-    */
+void Storage.setItem(key, value)
+/*
+  Sets the key to the value specified for the current namespace in localStorage
+*/
 		
-    void Storage.setNamespace(nameSpace)
-    /*
-    	Defines the namespace prefix to use on all stored keys.
-    */
-		
-		
-		
-		
-		
+void Storage.setNamespace(nameSpace)
+/*
+  Defines the namespace prefix to use on all stored keys.
+*/
+```
